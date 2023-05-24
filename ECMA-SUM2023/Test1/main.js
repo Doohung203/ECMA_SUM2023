@@ -34,10 +34,3 @@ const removeProduct = () =>{
         console.log("Không tìm thấy sản phẩm cần xóa")
     }
 }
-removeProduct()
-function removeAllProduct() {
-    product = [];
-    console.log("Đã xóa toàn bộ sản phẩm trong mảng.");
-    showProduct();
-  }
-z
