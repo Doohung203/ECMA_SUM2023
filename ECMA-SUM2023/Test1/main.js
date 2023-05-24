@@ -10,18 +10,18 @@ const showProduct = () =>{
 }
 showProduct()
 
-function addProduct() {
-    var productName;
-    do {
-      productName = prompt("Nhập tên sản phẩm:");
+  const addProduct = () => {
+      let productName;
+      do {
+          productName = prompt("Nhập tên sản phẩm:");
       if (productName.length < 5) {
-        console.log("Nhập lại tên sản phẩm ");
-      }
+          console.log("Ngắn hơn 5 kí tự. Nhập lại tên sản phẩm");
+        }
     } while (productName.length < 5);
-  
+    
     product.push(productName);
     console.log(product);
-  }
+};
 addProduct()
 
 const removeProduct = () =>{
@@ -34,3 +34,4 @@ const removeProduct = () =>{
         console.log("Không tìm thấy sản phẩm cần xóa")
     }
 }
+removeProduct()
