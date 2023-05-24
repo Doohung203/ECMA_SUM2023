@@ -1,4 +1,4 @@
-const product = ["mescedes", "audi" , "ford" , "lamborghini"];
+const product = ["mescedes", "audi", "ford", "lamborghini"];
 
 // console.log(product);
 // const showProduct = () =>{
@@ -24,13 +24,26 @@ const product = ["mescedes", "audi" , "ford" , "lamborghini"];
 // }
 // addProduct()
 
-const removeProduct = () =>{
+// const removeProduct = () =>{
+//     const nameProductRemove = prompt("Nhập tên sản phẩm cần xóa");
+//     if(nameProductRemove == product.length){
+//         nameProductRemove = product.filter(item => item !== product.length)
+//         console.log(product);
+//     }else{
+//         console.log("Không tìm thấy sản phẩm cần xóa")
+//     }
+// }
+// removeProduct()
+const removeProduct = (product) => {
     const nameProductRemove = prompt("Nhập tên sản phẩm cần xóa");
-    if(true){
-        nameProductRemove = product.filter(item => item !== product)
-        console.log(product);
+    const index = product.index;
+    if (index !== -1) {
+        product.splice(index, 1);
+        console.log(product)
     }else{
-        console.log("Không tìm thấy sản phẩm cần xóa")
+        console.log("không tìm thấy sản phẩm cần xóa")
     }
 }
 removeProduct()
+
+console.log(product)
