@@ -1,6 +1,11 @@
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
+
 const AboutPage = () =>{
     return `
-        <h1>Category Page</h1>
+        ${Header()};
+        <h1>About Page</h1>
+        ${Footer()};
     `
 }
 

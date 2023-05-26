@@ -1,15 +1,15 @@
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
-import { postList } from "../dataFake";
+import { projectList } from "../dataFake";
   
 const HomePage = () => {
     return `
         ${Header()}
         </main>
-           ${postList.map(function(post){
+           ${projectList.map(function(project){
                 return`
-                    <h2> ${post.title}</h2>
-                    <h2> ${post.content}</h2>
+                    <h2> ${project.title}</h2>
+                    <h2> ${project.content}</h2>
                 `
            }).join("")}
     
