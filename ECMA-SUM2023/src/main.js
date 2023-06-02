@@ -6,7 +6,6 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProjectDetail from "./pages/ProjectDetail";
 
 const app = document.querySelector("#app"); //tìm phần tử html có id là app
-
 const router = new Navigo('/'); //khởi tạo router từ đối tượng Navigo
 
 const render = (content, container) => {

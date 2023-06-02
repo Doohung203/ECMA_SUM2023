@@ -1,7 +1,7 @@
 import { projectList } from "../dataFake";
 
 const ProjectDetail = (data) => {
-    const currentProject = projectList.find((project) => {
+    const currentProject = projectList.find((project) => { //tìm kiếm id data trong projectList gán vào biến currentProject
         return project.id == data.id;
     })
     if(currentProject){
@@ -11,7 +11,7 @@ const ProjectDetail = (data) => {
             <h2>${currentProject.content}</h2>
         `
     }
-    return `<h1>Project khong ton tai</h1>`
+    return `<h1>Project không tồn tại</h1>`
 }
 
 export default ProjectDetail;
